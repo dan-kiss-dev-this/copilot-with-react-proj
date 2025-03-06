@@ -33,10 +33,11 @@ export default function Register() {
     return (
         <div>
             <h2>Register Page</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} role="form">
                 <div>
-                    <label>Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input
+                        id="email"
                         type="text"
                         value={email}
                         onChange={handleEmailChange}
